@@ -1,0 +1,119 @@
+/* :root {
+  background: purple;
+}
+
+html {
+  max-width: 720px;
+
+  background: blue;
+}
+
+body {
+  background: #fff;
+}
+
+* {
+  color: red;
+}
+
+h1 {
+  color: green;
+}
+
+.box {
+  background: #fffffe;
+}
+
+#user {
+  color: blue;
+}
+
+h1,
+h2#user,
+button {
+  color: green;
+}
+
+button.button {
+  background: red;
+  color: yellow;
+}
+
+div > p {
+  color: aqua;
+}
+
+div p {
+  color: aqua;
+}
+
+h1 + p {
+  background: black;
+}
+
+h1 + p {
+  background: black;
+}
+
+h1 ~ p {
+  background: plum;
+} */
+
+/* .card-dark {
+  background: rgb(206, 196, 175);
+}
+
+.item {
+  color: green;
+}
+
+.item:first-child {
+  color: blue;
+}
+
+.item:last-child {
+  color: red;
+}
+
+.item:only-child {
+  color: purple;
+}
+
+p:first-of-type {
+  color: blueviolet;
+} */
+/* .input-dark {
+  background: rgb(227, 158, 10);
+}
+.input-dark[required] {
+  background: rgb(181, 163, 127);
+} */
+
+#test:target {
+  color: red;
+}
+
+.link:link {
+  color: red;
+}
+.link:hover {
+  color: green;
+}
+.card:hover {
+  background: yellow;
+}
+.link:active {
+  color: white;
+}
+.card:active {
+  background-color: purple;
+}
+input {
+  background: rgb(7, 168, 21);
+}
+input:focus {
+  background: blue;
+}
+.card:focus-within {
+  background: red;
+}
