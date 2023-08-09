@@ -255,6 +255,14 @@
   display: flex;
 }
 
+.updates_blok {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: 40px;
+  gap: 12px;
+}
+
 .updates_nickname {
   font-size: 16px;
   color: #6c757d;
@@ -265,6 +273,8 @@
   height: 32px;
   width: 32px;
   display: flex;
+  position: absolute;
+  left: 0px;
 }
 
 .updates_description {

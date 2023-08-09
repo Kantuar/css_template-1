@@ -44,18 +44,19 @@
 <div class="updates">
     <h3 class="updates_title">{{title}}</h3>
 
-    {{#each list}}
-    <img src="https://picsum.photos/200/300" class="updates_image">
-    <div class="updates_nickname">@{{nickname}}</div>
-    <div class="updates_description">{{description}}</div>
-    {{/each}}
+    <div class="updates_blok">
+        {{#each list}}
+        <img src="https://picsum.photos/200/300" class="updates_image">
+        <div class="updates_nickname">@{{nickname}}</div>
+        <div class="updates_description">{{description}}</div>
+        {{/each}}
+    </div>
 
     <a href="{{show_all.url}}" class="update_link_text">{{show_all.text}}</a>
 </div>
 {{/with}}
 
 {{#with expirience}}
-
 <div class="expirience">
     <div class="expirience_header">
         <div class="expirience_badge">{{badge}}</div>
