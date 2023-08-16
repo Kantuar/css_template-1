@@ -1,29 +1,6 @@
-:root {
-  --space-m: 12px;
-  --space-xm: 16px;
-  --space-l: 24px;
-  --space-b: 36px;
-
-  --size-s: 14px;
-  --size-d: 16px;
-  --size-l: 20px;
-
-  --color-border: #dee2e6;
-  --color-primary: rgb(42, 42, 234);
-  --color-white: #ffffff;
-  --color-title: #212529;
-  --color-text: #343a40;
-
-  --border-radius: 12px;
-
-  --weight-title: 500;
-  --weight-text: 400;
-
-  --page-width: 960px;
-}
+@import '/css/var.css';
 
 /*============================*/
-
 .page {
   background: #ffffff;
   padding: 0 15px;
@@ -39,6 +16,8 @@
   display: flex;
   flex-direction: column;
   gap: 80px;
+
+  font-family: 'Segment';
 }
 
 /*============================*/
@@ -248,7 +227,7 @@
 .form_button {
   background: var(--color-white);
   width: 100%;
-  max-width: 160px;
+  max-width: 170px;
   color: var(--color-text);
 }
 
@@ -285,7 +264,7 @@
   right: var(--space-l);
 }
 
-.modal {
+/* .modal {
   position: fixed;
   top: 200px;
   left: 200px;
@@ -311,8 +290,8 @@
     0.265,
     1.55
   );
-  transition-delay: 1s; */
-}
+  transition-delay: 1s; 
+} */
 
 body:hover .modal {
   animation-name: fly;
@@ -334,4 +313,61 @@ body:hover .modal {
 
 :root {
   scroll-behavior: smooth;
+}
+
+.blog {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media all and (width <= 600px) {
+  .blog {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (600px < width <= 800px) {
+  .blog {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.form {
+  gap: 12px;
+}
+
+@media all and (width <= 560px) {
+  .form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .form_info {
+    max-width: 300px;
+    width: 100%;
+    line-height: 150%;
+  }
+
+  .form_content {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.hero_container {
+  container-type: inline-size;
+  container-name: hero;
+}
+
+@container hero (width < 960px) {
+  .hero {
+    flex-direction: column;
+  }
+}
+
+.ex {
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 1ex;
 }

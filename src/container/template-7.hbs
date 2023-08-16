@@ -1,0 +1,46 @@
+<div class="page">
+    <div class="page_content">
+        <header class="header">
+            {{#with header}}
+            <div class="header_up">
+                <div class="header_logo">{{brandName}}</div>
+
+                {{#each links}}
+                <a href="{{url}}" class="header_links{">{{text}}</a>
+                {{/each}}
+            </div>
+            {{!-- <div class="header_down">
+                {{#with ad}}
+                <div class="ad_logo">Ad</div>
+                <div class="ad_text">{{text}}: {{url}}</div>
+                {{/with}}
+
+            </div> --}}
+
+            {{/with}}
+        </header>
+
+        <div class="hero">
+
+        </div>
+
+        <div class="about">
+
+        </div>
+
+        <div class="articles">
+
+        </div>
+
+        <footer class="footer">
+            {{#with footer}}
+            <div class="footer_copyright">{{copyright}}</div>
+            {{#each pages}}
+            <div>
+                <a href="{{path}}" class="footer_pages">{{name}}</a>
+            </div>
+            {{/each}}
+            {{/with}}
+        </footer>
+    </div>
+</div>
