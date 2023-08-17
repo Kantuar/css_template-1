@@ -48,16 +48,18 @@
                 <strong class="articles_title">Our Articles</strong>
                 <a href="#" class="articles_button">View All</a>
             </div>
-            {{#each articles}}
-            <div class="articles_content">
-                <div class="articles_card">
-                    <img src="{{photo}}" id="{{id}}" class="card_image">
-                    <strong class="card_name">{{name}}</strong>
-                    <p class="card_description">{{description}}</p>
-                    <a href="#" class="button">Read all</a>
+            <div class="article_main">
+                {{#each articles}}
+                <div class="articles_content">
+                    <div class="articles_card">
+                        <img src="{{photo}}" id="{{id}}" class="card_image">
+                        <strong class="card_name">{{name}}</strong>
+                        <p class="card_description">{{description}}</p>
+                        <a href="#" class="button">Read all</a>
+                    </div>
                 </div>
+                {{/each}}
             </div>
-            {{/each}}
         </div>
 
         <footer class="footer">

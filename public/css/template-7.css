@@ -154,7 +154,7 @@
   border-radius: 10px;
   font-size: 16px;
   background: #885ffb;
-  max-width: 150px;
+  width: 150px;
   transition: 0.7s;
 }
 
@@ -206,12 +206,20 @@
   border: 1px solid #9ca3af;
   border-radius: 10px;
   font-size: 14px;
+  transition: 0.7s;
 }
 
+.articles_button:hover {
+  background-color: #885ffb;
+}
+
+.article_main {
+  display: flex;
+}
 .articles_content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+  gap: 16px;
 }
 
 .articles_card {
@@ -222,6 +230,7 @@
 
 .card_image {
   border-radius: 24px;
+  max-width: 360px;
 }
 
 .card_name {
@@ -236,7 +245,7 @@
 }
 
 .articles_card > .button {
-  text-align: center;
+  max-width: fit-content;
 }
 .footer {
   padding: var(--space-l) 0;
